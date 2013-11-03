@@ -36,6 +36,24 @@
             "js": [
                 "js/lib/jquery.js", "src/inject/inject.js"
             ]
+        },
+        {
+            "matches": [
+                "http://www.youtube.com/embed/*"
+            ],
+            "all_frames": true,
+            "css": [
+                "src/inject/injectIframes.css"
+            ]
+        },
+        {
+            "matches": [
+                "http://www.youtube.com/embed/*"
+            ],
+            "all_frames": true,
+            "js": [
+                "js/lib/jquery.js", "src/inject/injectIframes.js"
+            ]
         }
     ]
 }

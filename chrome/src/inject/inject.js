@@ -1,14 +1,13 @@
-console.log("Hi from video trainer!");
-
 (function(){
 
-    var speeds = [0.75, 1, 1.25];
+    var videoId = $('[itemprop="videoId"]').attr('content');
     var videoEl = $('video')[0];
     var watchLaterEl = $('.html5-watch-later-button');
     var speedInput, speedValue;
+    replacePlayer();
 
     if($('.html5-watch-later-button').length) {
-        inject();
+        //inject();
     } else {
         warn();
         return;
@@ -16,6 +15,11 @@ console.log("Hi from video trainer!");
 
     function warn(){
         console.warn("No HTML5 Player found, sorry");
+    }
+
+    function replacePlayer(){
+        var embeddedPlayer = $('<iframe class="embedded-player" src="//www.youtube.com/embed/' + videoId + '?autoplay=1&amp;html5=1" allowfullscreen=""></iframe>');
+        $('#player-api').append(embeddedPlayer);
     }
 
     function inject(){

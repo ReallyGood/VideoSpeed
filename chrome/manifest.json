@@ -23,7 +23,7 @@
     "content_scripts": [
         {
             "matches": [
-                "http://www.youtube.com/*"
+                "http://www.youtube.com/*", "https://www.youtube.com/*"
             ],
             "css": [
                 "src/inject/inject.css"
@@ -31,7 +31,7 @@
         },
         {
             "matches": [
-                "http://www.youtube.com/*"
+                "http://www.youtube.com/*", "https://www.youtube.com/*"
             ],
             "js": [
                 "js/lib/jquery.js", "src/inject/inject.js"
@@ -39,7 +39,7 @@
         },
         {
             "matches": [
-                "http://www.youtube.com/embed/*"
+                "http://www.youtube.com/embed/*", "https://www.youtube.com/embed/*"
             ],
             "all_frames": true,
             "css": [
@@ -48,7 +48,7 @@
         },
         {
             "matches": [
-                "http://www.youtube.com/embed/*"
+                "http://www.youtube.com/embed/*", "https://www.youtube.com/embed/*"
             ],
             "all_frames": true,
             "js": [

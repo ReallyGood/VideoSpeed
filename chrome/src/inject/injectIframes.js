@@ -7,7 +7,6 @@
     inject();
 
     function inject(){
-        alert("hi from inject");
         speedInput = $('<input type="range" class="speed" value="1.0" min="0.5" max="1.5" step="0.1">');
         speedValue = $('<strong>Speed: &times;<span class="current-speed">1.0</span></strong>');
         var speedchangeButton = watchLaterEl
@@ -22,6 +21,10 @@
                 .end()
             .insertAfter(watchLaterEl);
         speedInput.on('change', onSpeedChange);
+
+        if(location.search.indexOf('youtubecom=1') > -1) {
+            $('body').addClass('youtubecom');
+        }
     }
 
     function changeSpeed(speed){

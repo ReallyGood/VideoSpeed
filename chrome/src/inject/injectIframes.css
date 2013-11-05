@@ -1,3 +1,7 @@
+.youtubecom .html5-watch-on-youtube-button {
+	display: none !important;
+}
+
 .html5-change-speed-button .yt-uix-button-icon {
 	display: none;
 }

@@ -7,7 +7,7 @@
     inject();
 
     function inject(){
-        speedInput = $('<input type="range" class="speed" value="1.0" min="0.5" max="1.5" step="0.1">');
+        speedInput = $('<input type="range" class="speed" value="1.0" min="0.3" max="1.7" step="0.1">');
         speedValue = $('<strong>Speed: &times;<span class="current-speed">1.0</span></strong>');
         var speedchangeButton = watchLaterEl
             .clone()

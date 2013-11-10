@@ -55,5 +55,10 @@
                 "js/lib/jquery.js", "src/inject/injectIframes.js"
             ]
         }
+    ],
+    "web_accessible_resources": [
+        "src/inject/injectIframes.css",
+        "js/lib/jquery.js",
+        "src/inject/injectIframes.js"
     ]
 }
